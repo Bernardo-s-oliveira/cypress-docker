@@ -6,7 +6,7 @@ services:
       - '8084:8080'
     volumes:
       - 'jenkins_home:/var/jenkins_home'
-      - 'docker run -v //var/run/docker.sock:/var/run/docker.sock'
+      - 'sudo chmod /var/run/docker.sock:/var/run/docker.sock'
 volumes:
   jenkins_home:
     driver: local
