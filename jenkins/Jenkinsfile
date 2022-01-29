@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'npm clean package -DskipTests=true'
             }
+        }
         stage('test cypress') {
             steps {
                 sh 'npm run cy:run'
