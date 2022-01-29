@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Just Teste') {
+        stage('test cypress') {
             steps {
-                sh 'echo deu certo!'
+                sh 'npm run cy:run'
             }
         }
     }
